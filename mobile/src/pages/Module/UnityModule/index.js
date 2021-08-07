@@ -33,8 +33,8 @@ export default function UnityModule() {
         } else return true
     }
 
-    function navigateToInUnityInfo(info) {
-        const videOrImage = imageOrVideo(info.image_name)
+    async function navigateToInUnityInfo(info) {
+        const videOrImage = await imageOrVideo(info.image_name)
         navigation.navigate('Informação da Unidade', { info, videOrImage });
     }
 

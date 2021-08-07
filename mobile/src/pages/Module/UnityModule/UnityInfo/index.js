@@ -14,27 +14,16 @@ export default function UnityInfo() {
 
     return (
         <View style={styles.unityInfoBackGround}>
-            <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
-                {
-                    videOrImage ?
-                        <Image resizeMode="contain" source={{ uri: info.image_url, }} style={styles.image} />
-                        :
-                        <Video
-                            ref={video}
-                            style={styles.video}
-                            source={{
-                                uri: info.image_url,
-                            }}
-                            useNativeControls
-                            resizeMode="contain"
-                            isLooping
-                            onPlaybackStatusUpdate={status => setStatus(() => status)}
-                        />
-                }
-                <Text style={styles.unityInfo}>
-                    {info.content}
-                </Text>
-            </ScrollView>
+            <Image resizeMode="contain" source={{ uri: info.image_url, }} style={styles.image} />
+            
+            <View style={styles.container}>
+                <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
+                    <Text style={styles.unityInfo}>
+                        {info.content}
+                    </Text>
+                </ScrollView>
+            
+            </View>
         </View>
     )
 };

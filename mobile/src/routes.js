@@ -21,33 +21,36 @@ export default function Routes() {
                         },
                         headerTintColor: '#000',
                         headerTitleStyle: {
-                            // fontWeight: 'bold',
+                        fontFamily: 'PoppinsBold',
+                        textAlign: 'center',
+                        color: '#FFF',
                         },
                     }}
-                    name="Módulos" component={Module}
+                    name="Categoria de receitas" component={Module}
                 />
                 <AppStack.Screen
                     options={{
-                        title: 'Unidades',
+                        title: 'Receitas',
                         headerStyle: {
                             backgroundColor: '#C85103',
+                            
                         },
-                        headerTintColor: '#000',
+                        headerTintColor: '#FFF',
                         headerTitleStyle: {
-                            // fontWeight: 'bold',
+                        fontFamily: 'PoppinsBold',
                         },
                     }}
                     name="Unidades" component={UnityModule}
                 />
                 <AppStack.Screen
                     options={{
-                        title: '',
+                        title: 'Receita',
                         headerStyle: {
                             backgroundColor: '#C85103',
                         },
-                        headerTintColor: '#000',
+                        headerTintColor: '#FFF',
                         headerTitleStyle: {
-                            // fontWeight: 'bold',
+                        fontFamily: 'PoppinsBold',
                         },
                     }}
                     name="Informação da Unidade" component={UnityInfo}

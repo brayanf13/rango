@@ -4,20 +4,8 @@ import Constants from 'expo-constants';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        paddingHorizontal: 24,
-        margin: 24,
-        borderRadius: 8,
+        paddingHorizontal: 48,
         backgroundColor: '#C85103',
-
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 8,
-        },
-        shadowOpacity: 0.46,
-        shadowRadius: 11.14,
-
-        elevation: 17,
     },
 
     viewInput: {
@@ -63,8 +51,8 @@ export default StyleSheet.create({
     module: {
         // flex: 1,
         flexDirection: 'column',
-        padding: 24,
-        margin: 5,
+        margin: 4,
+        height: 200,
         borderRadius: 8,
         backgroundColor: '#FFF',
         marginBottom: 16,
@@ -81,6 +69,9 @@ export default StyleSheet.create({
     },
 
     moduleButton: {
+        flex: 1,
+        padding: 24,
+        margin: 2,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
@@ -88,13 +79,18 @@ export default StyleSheet.create({
 
     moduleButtonText: {
         color: 'black',
-        fontSize: 15,
-        fontWeight: 'bold',
+        fontSize: 16,
+        fontFamily: 'Poppins',
     },
 
     image: {
-        height: "100%",
+        height: '100%',
         width: '100%',
         borderRadius: 8,
+    },
+
+    scroll: {
+        flex: 1,
+        marginBottom: 20
     },
 });

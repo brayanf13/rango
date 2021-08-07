@@ -5,8 +5,8 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 24,
-        margin: 24,
-        borderRadius: 8,
+        // margin: 24,
+        // borderRadius: 8,
         backgroundColor: '#C85103',
 
         shadowColor: "#000",
@@ -61,10 +61,12 @@ export default StyleSheet.create({
     },
 
     unityModule: {
+        flexDirection: 'column',
+        margin: 4,
+        height: 220,
         padding: 24,
         borderRadius: 8,
-        backgroundColor: '#FFF',
-        marginBottom: 16,
+        backgroundColor: '#C76F35',
 
         shadowColor: "#000",
         shadowOffset: {
@@ -84,9 +86,9 @@ export default StyleSheet.create({
     },
 
     unityModuleButtonText: {
-        color: 'black',
+        color: 'white',
         fontSize: 15,
-        fontWeight: 'bold',
+        fontFamily: 'Poppins',
     },
 
     image: {
